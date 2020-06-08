@@ -9,6 +9,8 @@ Use a command line to run the program:
 
 will download the data for Apple, Tesla, Microsoft, plot them and save them as a CSV file in the same folder, naming the CSV with the stock titles.
 
+![alt text](https://github.com/alex-rpd/StocksData/blob/master/Figure_1.png)
+
 Changing the last argument to False will avoid plotting the data, same if it is omitted. The plotting argument must be last.
 
 The program requires the `yfinance` package. Install using `pip install yfinance` as per the instructions on the `yfinance` website.
