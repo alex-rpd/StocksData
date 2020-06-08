@@ -17,4 +17,4 @@ The data start on 01/01/2015 until today (today = the day the program is run).
 
 Changing the last argument to False will avoid plotting the data, same if the argument is omitted. The `True`/`False` plotting argument must be last.
 
-The program requires the `yfinance` package. Install using `pip install yfinance` as per the instructions on the `yfinance` website.
+The program requires the `yfinance` package. Install using `pip install yfinance` as per the instructions on the [yfinance](https://pypi.org/project/yfinance/) website.
