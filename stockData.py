@@ -6,7 +6,6 @@ import yfinance as yf
 import argparse
 
 
-
 style.use('ggplot')
 
 parser = argparse.ArgumentParser(description='')
@@ -43,18 +42,18 @@ df.to_csv(f"Stocks_{'-'.join(stocks)}_{dt.date.today()}.csv")
 print(f'File with {stocks} stock data saved.')
 
 if plot:
-	if len(stocks) == 1:
-		plt.plot(df.index, df['Adj Close'], label=stocks[0])
-		plt.legend(frameon=False)
-		plt.xlabel('Date')
-		plt.ylabel('Adj Close price ($)')
-		plt.show()
+    if len(stocks) == 1:
+        plt.plot(df.index, df['Adj Close'], label=stocks[0])
+        plt.legend(frameon=False)
+        plt.xlabel('Date')
+        plt.ylabel('Adj Close price ($)')
+        plt.show()
 
-	else:
-	    for stock in stocks:
-	    	plt.plot(df.index, df['Adj Close'][stock], label=stock)
-		
-	    plt.legend(frameon=False)
-	    plt.xlabel('Date')
-	    plt.ylabel('Adj Close price ($)')
-	    plt.show()
+    else:
+        for stock in stocks:
+            plt.plot(df.index, df['Adj Close'][stock], label=stock)
+
+        plt.legend(frameon=False)
+        plt.xlabel('Date')
+        plt.ylabel('Adj Close price ($)')
+        plt.show()
