@@ -11,7 +11,7 @@ The `-l` argument is needed, followed by the name of the stocks separated by spa
 
 The above command will download the data for Apple, Tesla and Microsoft, plot them and save them as a CSV file in the same folder, naming the CSV with the stock titles and the current date in reverse order (YYYY-MM-DD).
 
-The data start on 01/01/2015 until today (today = the day the program is run).
+The data have a default start date of 01/01/2015 and default end date today (today = the day the program is run).
 
 ![alt text](https://github.com/alex-rpd/StocksData/blob/master/Figure1.png)
 
