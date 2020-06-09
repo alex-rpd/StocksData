@@ -13,7 +13,7 @@ The above command will download the data for Apple, Tesla and Microsoft, plot th
 
 The data start on 01/01/2015 until today (today = the day the program is run).
 
-![alt text](https://github.com/alex-rpd/StocksData/blob/master/Figure_1.png)
+![alt text](https://github.com/alex-rpd/StocksData/blob/master/Figure1.png)
 
 Changing the last argument to False will avoid plotting the data, same if the argument is omitted. The `True`/`False` plotting argument must be last.
 
