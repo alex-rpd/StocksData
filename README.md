@@ -1,7 +1,7 @@
 # StocksData
 Simple python program to be used from the command line directly to download stocks data.
 
-To use the program, save the stocksData.py file in a folder on your computer.
+To use the program, either run the jupyter notebook or save the stocksData.py file in a folder on your computer.
 
 Use a command line to run the program:
 
