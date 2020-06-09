@@ -44,6 +44,7 @@ print(f'File with {stocks} stock data saved.')
 if plot:
     if len(stocks) == 1:
         plt.plot(df.index, df['Adj Close'], label=stocks[0])
+        plt.plot(df.index, df['Adj Close'].rolling(window=14).mean(), '--k')
         plt.legend(frameon=False)
         plt.xlabel('Date')
         plt.ylabel('Adj Close price ($)')
@@ -52,6 +53,7 @@ if plot:
     else:
         for stock in stocks:
             plt.plot(df.index, df['Adj Close'][stock], label=stock)
+            plt.plot(df.index, df['Adj Close'][stock].rolling(window=14).mean(), '--k')
 
         plt.legend(frameon=False)
         plt.xlabel('Date')
